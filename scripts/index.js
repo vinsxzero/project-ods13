@@ -11,7 +11,7 @@ menuToggle.addEventListener("click", () => {
   menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
-// Fecha o menu ao selecionar uma seção
+// Fechar menu após clicar em um link
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
@@ -21,5 +21,5 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-// Ano automático no rodapé
+// Ano automático
 document.getElementById("year").textContent = new Date().getFullYear();
